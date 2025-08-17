@@ -6,31 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人資訊頁</title>
   </head>
-  <body>
+  <body class="profile-bg">
     <%- include('./layout/header'); -%>
 
     <div class="container my-4 my-md-5">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10 col-xl-9">
           <div class="profile-header text-center position-relative">
-            <div class="cover-image position-relative shadow-sm">
+            <div class="cover-image position-relative">
               <button
-                class="btn btn-light btn-sm position-absolute bottom-0 end-0 m-3"
+                class="btn position-absolute bottom-0 end-0 d-flex m-3 justify-content-center align-items-center gap-2"
               >
-                <i class="bi bi-pencil-fill me-1"></i> 編輯封面
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_187_44193)">
+                    <path
+                      d="M3 17.2501V21.0001H6.75L17.81 9.94006L14.06 6.19006L3 17.2501ZM20.71 7.04006C21.1 6.65006 21.1 6.02006 20.71 5.63006L18.37 3.29006C17.98 2.90006 17.35 2.90006 16.96 3.29006L15.13 5.12006L18.88 8.87006L20.71 7.04006Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_187_44193">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="text-white">編輯封面</span>
               </button>
             </div>
-            <div class="profile-picture position-relative">
+            <div class="profile-picture">
               <img
-                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="../assets/images/user/avatar-1.png"
                 class="rounded-circle border border-5 border-white shadow-sm"
                 alt="Jessica Yen"
               />
-              <button
-                class="btn btn-light btn-sm rounded-circle position-absolute bottom-0 end-0 m-1 d-flex justify-content-center align-items-center"
-                style="width: 30px; height: 30px"
-              >
-                <i class="bi bi-pencil-fill"></i>
+              <button class="btn position-absolute bottom-0 end-1">
+                <svg
+                  width="41"
+                  height="40"
+                  viewBox="0 0 41 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="39"
+                    height="39"
+                    rx="19.5"
+                    fill="#4A3830"
+                  />
+                  <rect
+                    x="1"
+                    y="0.5"
+                    width="39"
+                    height="39"
+                    rx="19.5"
+                    stroke="#4A3830"
+                  />
+                  <g clip-path="url(#clip0_187_44200)">
+                    <path
+                      d="M11.5 25.2501V29.0001H15.25L26.31 17.9401L22.56 14.1901L11.5 25.2501ZM29.21 15.0401C29.6 14.6501 29.6 14.0201 29.21 13.6301L26.87 11.2901C26.48 10.9001 25.85 10.9001 25.46 11.2901L23.63 13.1201L27.38 16.8701L29.21 15.0401Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_187_44200">
+                      <rect
+                        width="24"
+                        height="24"
+                        fill="white"
+                        transform="translate(8.5 8)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
               </button>
             </div>
           </div>
