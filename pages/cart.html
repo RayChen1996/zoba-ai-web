@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container my-4">
+      <div class="row">
+        <!-- 購物車商品列表 -->
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">
+                <i class="fas fa-shopping-cart me-2"></i>購物車
+              </h5>
+            </div>
+            <div class="card-body">
+              <!-- 商品項目 1 -->
+              <div class="row align-items-center border-bottom py-3">
+                <div class="col-2">
+                  <input type="checkbox" class="form-check-input" checked />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="/placeholder.svg?height=80&width=80"
+                    class="img-fluid rounded"
+                    alt="美味天然蜂蜜產品"
+                  />
+                </div>
+                <div class="col-4">
+                  <h6 class="mb-1">美味天然蜂蜜產品 HAUUKAS 300</h6>
+                  <small class="text-muted"
+                    >純天然蜂蜜 HAUUKAS
+                    300，來自優質蜂場的天然蜂蜜，營養豐富，口感香甜</small
+                  >
+                </div>
+                <div class="col-2">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="2"
+                    />
+                    <button class="btn btn-outline-secondary" type="button">
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-1 text-end">
+                  <strong>NT$ 830</strong>
+                  <br />
+                  <button class="btn btn-sm btn-link text-muted p-0">
+                    刪除
+                  </button>
+                </div>
+              </div>
+
+              <!-- 商品項目 2 -->
+              <div class="row align-items-center border-bottom py-3">
+                <div class="col-2">
+                  <input type="checkbox" class="form-check-input" checked />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="/placeholder.svg?height=80&width=80"
+                    class="img-fluid rounded"
+                    alt="美式咖啡豆精選"
+                  />
+                </div>
+                <div class="col-4">
+                  <h6 class="mb-1">美式咖啡豆精選套組</h6>
+                  <small class="text-muted"
+                    >精選優質咖啡豆，深度烘焙，香氣濃郁，適合美式咖啡愛好者</small
+                  >
+                </div>
+                <div class="col-2">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="1"
+                    />
+                    <button class="btn btn-outline-secondary" type="button">
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-1 text-end">
+                  <strong>NT$ 1,230</strong>
+                  <br />
+                  <button class="btn btn-sm btn-link text-muted p-0">
+                    刪除
+                  </button>
+                </div>
+              </div>
+
+              <!-- 商品項目 3 -->
+              <div class="row align-items-center py-3">
+                <div class="col-2">
+                  <input type="checkbox" class="form-check-input" checked />
+                </div>
+                <div class="col-3">
+                  <img
+                    src="/placeholder.svg?height=80&width=80"
+                    class="img-fluid rounded"
+                    alt="優質茶葉禮盒"
+                  />
+                </div>
+                <div class="col-4">
+                  <h6 class="mb-1">優質茶葉禮盒 HAUUKAS 200</h6>
+                  <small class="text-muted"
+                    >精選台灣高山茶葉，香氣清雅，回甘甘甜</small
+                  >
+                </div>
+                <div class="col-2">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">
+                      -
+                    </button>
+                    <input
+                      type="text"
+                      class="form-control text-center"
+                      value="3"
+                    />
+                    <button class="btn btn-outline-secondary" type="button">
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-1 text-end">
+                  <strong>NT$ 410</strong>
+                  <br />
+                  <button class="btn btn-sm btn-link text-muted p-0">
+                    刪除
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 結帳摘要 -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="mb-0">結帳摘要</h5>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-2">
+                <span>商品小計</span>
+                <span>NT$ 3,470</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>運費</span>
+                <span>NT$ 30</span>
+              </div>
+              <hr />
+              <div class="d-flex justify-content-between mb-3">
+                <strong>總計</strong>
+                <strong class="text-primary">NT$ 3,500</strong>
+              </div>
+              <button class="btn btn-dark w-100 mb-2">前往結帳</button>
+              <button class="btn btn-outline-secondary w-100">繼續購物</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 推薦商品區塊 -->
+      <div class="mt-5">
+        <h4 class="mb-4">
+          <i class="fas fa-star text-warning me-2"></i>其他顧客也購買了
+        </h4>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                class="card-img-top"
+                alt="環球影城門票"
+              />
+              <div class="card-body">
+                <h6 class="card-title">
+                  日本環球影城門票 - 大阪 1日券成人票 - 電子票券
+                </h6>
+                <p class="card-text small text-muted">體驗刺激的遊樂設施</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">NT$ 1,440</span>
+                  <button class="btn btn-sm btn-outline-primary">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                class="card-img-top"
+                alt="日式料理體驗"
+              />
+              <div class="card-body">
+                <h6 class="card-title">
+                  京都日式料理體驗 - 傳統懷石料理 - 含茶道體驗
+                </h6>
+                <p class="card-text small text-muted">品味正宗日式料理</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">NT$ 2,200</span>
+                  <button class="btn btn-sm btn-outline-primary">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                class="card-img-top"
+                alt="台北夜景觀光"
+              />
+              <div class="card-body">
+                <h6 class="card-title">
+                  台北101觀景台 - 夜景觀光票券 - 快速通關
+                </h6>
+                <p class="card-text small text-muted">俯瞰台北美麗夜景</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">NT$ 1,200</span>
+                  <button class="btn btn-sm btn-outline-primary">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                class="card-img-top"
+                alt="溫泉度假村"
+              />
+              <div class="card-body">
+                <h6 class="card-title">
+                  北投溫泉度假村 - 一泊二食溫泉套餐 - 雙人房
+                </h6>
+                <p class="card-text small text-muted">放鬆身心的溫泉之旅</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">NT$ 6,800</span>
+                  <button class="btn btn-sm btn-outline-primary">
+                    加入購物車
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

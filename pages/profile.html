@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>個人資訊頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container my-4 my-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-9">
+          <div class="profile-header text-center position-relative">
+            <div class="cover-image position-relative shadow-sm">
+              <button
+                class="btn btn-light btn-sm position-absolute bottom-0 end-0 m-3"
+              >
+                <i class="bi bi-pencil-fill me-1"></i> 編輯封面
+              </button>
+            </div>
+            <div class="profile-picture position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="rounded-circle border border-5 border-white shadow-sm"
+                alt="Jessica Yen"
+              />
+              <button
+                class="btn btn-light btn-sm rounded-circle position-absolute bottom-0 end-0 m-1 d-flex justify-content-center align-items-center"
+                style="width: 30px; height: 30px"
+              >
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="text-center pt-3 pb-4">
+            <h2 class="fw-bold">Jessica</h2>
+            <p class="text-muted">jessica.yen@gmail.com</p>
+          </div>
+
+          <ul
+            class="nav nav-pills nav-fill mb-4 main-nav"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="pills-account-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-account"
+                type="button"
+                role="tab"
+              >
+                我的帳號
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-orders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-orders"
+                type="button"
+                role="tab"
+              >
+                訂單管理
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="pills-favorites-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-favorites"
+                type="button"
+                role="tab"
+              >
+                我的收藏
+              </button>
+            </li>
+          </ul>
+
+          <div class="card border-0 shadow-sm" style="border-radius: 1rem">
+            <div class="card-body p-4 p-md-5">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-account"
+                  role="tabpanel"
+                >
+                  <h3 class="mb-4 fw-bold">我的帳號</h3>
+
+                  <ul class="nav nav-tabs mb-4">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >個人資訊</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-muted" href="#">常用旅客</a>
+                    </li>
+                  </ul>
+
+                  <div class="row g-4 align-items-center">
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">姓名</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">Jessica Yen</p>
+                    </div>
+
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">電子信箱</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">jessica.yen@gmail.com</p>
+                    </div>
+
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">密碼</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">************</p>
+                    </div>
+
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">聯絡電話</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">+886 912-345-678</p>
+                    </div>
+
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">地址</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">台北市士林區幸福路193號5樓之1</p>
+                    </div>
+
+                    <div class="col-12 col-md-2 text-md-end info-label">
+                      <small class="text-muted">生日</small>
+                    </div>
+                    <div class="col-12 col-md-10">
+                      <p class="mb-0 fw-bold">1995-09-20</p>
+                    </div>
+                  </div>
+
+                  <div class="text-center mt-5">
+                    <button class="btn btn-outline-danger px-4 rounded-pill">
+                      <i class="bi bi-pencil-fill me-1"></i> 編輯資訊
+                    </button>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="pills-orders" role="tabpanel">
+                  <h3 class="mb-4 fw-bold">訂單管理</h3>
+                  <p>這裡顯示訂單列表。</p>
+                </div>
+
+                <div class="tab-pane fade" id="pills-favorites" role="tabpanel">
+                  <h3 class="mb-4 fw-bold">我的收藏</h3>
+                  <p>這裡顯示收藏列表。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
