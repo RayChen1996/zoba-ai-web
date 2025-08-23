@@ -4,277 +4,314 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <title>購物車</title>
   </head>
   <body class="cart-bg">
     <%- include('./layout/header'); -%>
-    <div class="container my-4">
-      <div class="row">
+    <div class="container my-5">
+      <div class="row g-4">
         <!-- 購物車商品列表 -->
+
         <div class="col-lg-8">
-          <div class="card">
-            <div class="card-body">
-              <!-- 商品項目 1 -->
-              <div class="row align-items-center border-bottom py-3">
-                <div class="col-2">
-                  <input type="checkbox" class="form-check-input" checked />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../assets/images/cart/cart-1.png"
-                    class="img-fluid rounded"
-                    alt="美味天然蜂蜜產品"
-                  />
-                </div>
-                <div class="col-4">
-                  <h6 class="mb-1">美味天然蜂蜜產品 HAUUKAS 300</h6>
-                  <span class="text-muted"
-                    >阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵</span
-                  >
-                  <span>兌換期內皆適用</span>
-                </div>
-                <div class="col-2">
-                  <div class="input-group input-group-sm">
-                    <button
-                      class="btn btn-outline-secondary rounded-circle"
-                      type="button"
-                    >
-                      -
-                    </button>
-                    <input
-                      type="text"
-                      class="form-control border-0 text-center"
-                      value="2"
-                    />
-                    <button
-                      class="btn btn-outline-secondary rounded-circle"
-                      type="button"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-                <div class="col-1 text-end">
-                  <strong>NT$ 830</strong>
-                </div>
+          <div
+            class="card d-flex flex-row align-items-center justify-content-between p-3 mb-3"
+          >
+            <label>
+              <input type="checkbox" class="form-check-input" checked />
+              <span>全選</span>
+            </label>
+            <button class="btn btn-outline-primary">刪除選中活動</button>
+          </div>
+          <div class="card border-0 mb-5 mb-lg-7 p-3">
+            <!-- 商品項目 -->
+            <div class="row align-items-start py-3 border-bottom">
+              <!-- 勾選框 -->
+              <div class="col-1 d-flex justify-content-center">
+                <input type="checkbox" class="form-check-input" checked />
               </div>
 
-              <!-- 商品項目 2 -->
-              <div class="row align-items-center border-bottom py-3">
-                <div class="col-2">
-                  <input type="checkbox" class="form-check-input" checked />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../assets/images/cart/cart-2.png"
-                    class="img-fluid rounded"
-                    alt="美式咖啡豆精選"
-                  />
-                </div>
-                <div class="col-4">
-                  <h6 class="mb-1">美式咖啡豆精選套組</h6>
-                  <small class="text-muted"
-                    >精選優質咖啡豆，深度烘焙，香氣濃郁，適合美式咖啡愛好者</small
-                  >
-                </div>
-                <div class="col-2">
-                  <div class="input-group input-group-sm">
-                    <button class="btn btn-outline-secondary" type="button">
-                      -
-                    </button>
-                    <input
-                      type="text"
-                      class="form-control text-center"
-                      value="1"
-                    />
-                    <button class="btn btn-outline-secondary" type="button">
-                      +
-                    </button>
-                  </div>
-                </div>
-                <div class="col-1 text-end">
-                  <strong>NT$ 1,230</strong>
-                </div>
+              <!-- 圖片 -->
+              <div class="col-4 col-md-3">
+                <img
+                  src="../assets/images/cart/cart-1.png"
+                  class="img-fluid rounded"
+                  alt="美味天然蜂蜜產品"
+                />
               </div>
 
-              <!-- 商品項目 3 -->
-              <div class="row align-items-center py-3">
-                <div class="col-2">
-                  <input type="checkbox" class="form-check-input" checked />
-                </div>
-                <div class="col-3">
-                  <img
-                    src="../assets/images/cart/cart-3.png"
-                    class="img-fluid rounded"
-                    alt="優質茶葉禮盒"
+              <!-- 商品資訊 -->
+              <div class="col-7 col-md-8">
+                <h6 class="mb-1 fw-semibold">美味天然蜂蜜產品 HAUUKAS 300</h6>
+                <small class="text-muted d-block"
+                  >阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵</small
+                >
+                <small class="text-muted">兌換期內皆適用</small>
+
+                <!-- 數量 & 價格（手機顯示垂直，桌機顯示水平） -->
+                <div
+                  class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mt-2"
+                ></div>
+              </div>
+            </div>
+            <div class="align-items-center d-flex mt-5 justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
+                <a class="link underline-primary" href="#"> 編輯 </a>
+                <a class="link underline-primary" href="#"> 刪除 </a>
+              </div>
+              <!-- 價格 -->
+              <div class="fw-bold mt-2 mt-sm-0 text-sm-end">NT$ 830</div>
+            </div>
+          </div>
+
+          <div class="card border-0 mb-5 mb-lg-7 p-3">
+            <!-- 商品項目 2 -->
+            <div class="row align-items-start py-3">
+              <div class="col-1">
+                <input type="checkbox" class="form-check-input" checked />
+              </div>
+              <div class="col-3">
+                <img
+                  src="../assets/images/cart/cart-2.png"
+                  class="img-fluid rounded"
+                  alt="美式咖啡豆精選"
+                />
+              </div>
+              <div class="col-4">
+                <h6 class="mb-1 fw-semibold">美式咖啡豆精選套組</h6>
+                <small class="text-muted"
+                  >精選優質咖啡豆，深度烘焙，香氣濃郁，適合美式咖啡愛好者</small
+                >
+              </div>
+              <div class="col-3 d-flex align-items-center justify-content-end">
+                <div class="input-group input-group-sm" style="width: 100px">
+                  <button class="btn btn-outline-secondary rounded-circle">
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control text-center border-0"
+                    value="1"
                   />
-                </div>
-                <div class="col-4">
-                  <h6 class="mb-1">優質茶葉禮盒 HAUUKAS 200</h6>
-                  <small class="text-muted"
-                    >精選台灣高山茶葉，香氣清雅，回甘甘甜</small
-                  >
-                </div>
-                <div class="col-2">
-                  <div class="input-group input-group-sm">
-                    <button class="btn btn-outline-secondary" type="button">
-                      -
-                    </button>
-                    <input
-                      type="text"
-                      class="form-control text-center"
-                      value="3"
-                    />
-                    <button class="btn btn-outline-secondary" type="button">
-                      +
-                    </button>
-                  </div>
-                </div>
-                <div class="col-1 text-end">
-                  <strong>NT$ 410</strong>
+                  <button class="btn btn-outline-secondary rounded-circle">
+                    +
+                  </button>
                 </div>
               </div>
+              <!-- <div class="col-1 text-end fw-bold">NT$ 1,230</div> -->
+            </div>
+
+            <div class="align-items-center mt-5 d-flex justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
+                <a class="link underline-primary" href="#"> 編輯 </a>
+                <a class="link underline-primary" href="#"> 刪除 </a>
+              </div>
+              <!-- 價格 -->
+              <div class="fw-bold mt-2 mt-sm-0 text-sm-end">NT$ 830</div>
+            </div>
+          </div>
+          <div class="card border-0 mb-5 mb-lg-7 p-3">
+            <!-- 商品項目 3 -->
+            <div class="row align-items-start py-3">
+              <div class="col-1">
+                <input type="checkbox" class="form-check-input" checked />
+              </div>
+              <div class="col-3">
+                <img
+                  src="../assets/images/cart/cart-3.png"
+                  class="img-fluid rounded"
+                  alt="優質茶葉禮盒"
+                />
+              </div>
+              <div class="col-4">
+                <h6 class="mb-1 fw-semibold">優質茶葉禮盒 HAUUKAS 200</h6>
+                <small class="text-muted"
+                  >精選台灣高山茶葉，香氣清雅，回甘甘甜</small
+                >
+              </div>
+              <div class="col-3 d-flex align-items-center justify-content-end">
+                <div class="input-group input-group-sm" style="width: 100px">
+                  <button class="btn btn-outline-secondary rounded-circle">
+                    -
+                  </button>
+                  <input
+                    type="text"
+                    class="form-control text-center border-0"
+                    value="3"
+                  />
+                  <button class="btn btn-outline-secondary rounded-circle">
+                    +
+                  </button>
+                </div>
+              </div>
+              <!-- <div class="col-1 text-end fw-bold">NT$ 410</div> -->
+            </div>
+
+            <div class="align-items-center mt-5 d-flex justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
+                <a class="link underline-primary" href="#"> 編輯 </a>
+                <a class="link underline-primary" href="#"> 刪除 </a>
+              </div>
+              <!-- 價格 -->
+              <div class="fw-bold mt-2 mt-sm-0 text-sm-end">NT$ 830</div>
             </div>
           </div>
         </div>
 
         <!-- 結帳摘要 -->
         <div class="col-lg-4">
-          <div class="card">
+          <div class="card shadow-sm">
             <div class="card-body">
-              <h2 class="fs-6 fw-semibold">費用明細</h2>
-              <div class="d-flex justify-content-between mb-2 mt-5">
+              <h5 class="fw-bold">費用明細</h5>
+              <div class="d-flex justify-content-between my-2">
                 <span>商品小計</span>
                 <span>NT$ 3,470</span>
               </div>
-              <div class="d-flex justify-content-between mb-2">
+              <div class="d-flex justify-content-between my-2">
                 <span>優惠折抵</span>
                 <span>- 100</span>
               </div>
               <hr />
               <div class="d-flex justify-content-between mb-3">
                 <strong>總計</strong>
-                <span class="text-primary text-xl fw-bold">NT$ 3,500</span>
+                <span class="text-primary fw-bold fs-5">NT$ 3,500</span>
               </div>
-              <button class="btn btn-primary w-100 mb-2">前往結帳</button>
+              <button class="btn btn-primary w-100">前往結帳</button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 推薦商品區塊 -->
-      <div class="mt-5">
-        <h4 class="mb-4 text-primary font-bold d-flex align-items-center">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M17.227 10.2919L16.5135 13.6216H19.2595V16.3243H15.9297L15.1514 20H12.2757L13.0541 16.3243H9.11892L8.34054 20H5.48649L6.26486 16.3243H3V13.6216H6.84865L7.56216 10.2919H4.31892V7.58919H8.14595L8.9027 4H11.7568L11 7.58919H14.9351L15.6919 4H18.5676L17.8108 7.58919H20.5784V10.2919H17.227ZM14.3514 10.2919H10.4162L9.7027 13.6216H13.6378L14.3514 10.2919Z"
-              fill="#4A3830"
-            />
-          </svg>
-
-          其他顧客也購買了
-        </h4>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 border-0 bg-Neutral-15">
+      <!--  其他旅人也買了  -->
+      <div class="mt-10 mt-lg-12">
+        <h3 class="fw-bold mb-4 d-flex align-items-center text-primary gap-2">
+          <img src="../assets/images/cart/LOGO.png" alt="" />
+          其他旅人也買了
+        </h3>
+        <!-- 手機用swipper -->
+        <div class="swiper d-lg-none">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
+                <span
+                  role="button"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
+                >
+                  favorite_border
+                </span>
+                <img
+                  src="../assets/images/location/top-1.png"
+                  class="card-img-top rounded"
+                  alt="環球影城門票"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">環球影城超值一日遊</h6>
+                  <p class="text-muted small">體驗刺激的遊樂設施</p>
+                  <span class="fw-bold text-primary">NT$ 5,480</span>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide"></div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide"></div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide"></div>
+          </div>
+          <!-- Swiper controls -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- 桌機顯示4個 -->
+        <div class="row g-4 d-none d-lg-block">
+          <div class="col-lg-3">
+            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
               <span
-                class="material-icons-outlined position-absolute top-0 end-0 m-2"
+                role="button"
+                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
               >
                 favorite_border
               </span>
-
               <img
                 src="../assets/images/location/top-1.png"
                 class="card-img-top rounded"
                 alt="環球影城門票"
               />
               <div class="card-body">
-                <h6 class="card-title">
-                  環球影城超值一日遊｜哈利波特園區＋快速通關體驗
-                </h6>
-                <p class="card-text small text-muted">體驗刺激的遊樂設施</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="text-primary fw-bold">NT$ 5,480</span>
-                </div>
+                <h6 class="card-title">環球影城超值一日遊</h6>
+                <p class="text-muted small">體驗刺激的遊樂設施</p>
+                <span class="fw-bold text-primary">NT$ 5,480</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 border-0 bg-Neutral-15">
+          <div class="col-lg-3">
+            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
               <span
-                class="material-icons-outlined position-absolute top-0 end-0 m-2"
+                role="button"
+                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
               >
                 favorite_border
               </span>
               <img
                 src="../assets/images/location/top-2.png"
                 class="card-img-top rounded"
-                alt="日式料理體驗"
+                alt="環球影城門票"
               />
               <div class="card-body">
-                <h6 class="card-title">
-                  京都日式料理體驗 - 傳統懷石料理 - 含茶道體驗
-                </h6>
-                <p class="card-text small text-muted">品味正宗日式料理</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="text-primary fw-bold">NT$ 2,250</span>
-                </div>
+                <h6 class="card-title">環球影城超值一日遊</h6>
+                <p class="text-muted small">體驗刺激的遊樂設施</p>
+                <span class="fw-bold text-primary">NT$ 5,480</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 border-0 bg-Neutral-15">
+          <div class="col-lg-3">
+            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
               <span
-                class="material-icons-outlined position-absolute top-0 end-0 m-2"
+                role="button"
+                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
               >
                 favorite_border
               </span>
               <img
                 src="../assets/images/location/top-3.png"
                 class="card-img-top rounded"
-                alt="台北夜景觀光"
+                alt="環球影城門票"
               />
               <div class="card-body">
-                <h6 class="card-title">
-                  台北101觀景台 - 夜景觀光票券 - 快速通關
-                </h6>
-                <p class="card-text small text-muted">俯瞰台北美麗夜景</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="text-primary fw-bold">NT$ 1,580</span>
-                </div>
+                <h6 class="card-title">環球影城超值一日遊</h6>
+                <p class="text-muted small">體驗刺激的遊樂設施</p>
+                <span class="fw-bold text-primary">NT$ 5,480</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100 border-0 bg-Neutral-15">
+          <div class="col-lg-3">
+            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
               <span
-                class="material-icons-outlined position-absolute top-0 end-0 m-2"
+                role="button"
+                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
               >
                 favorite_border
               </span>
               <img
                 src="../assets/images/location/top-4.png"
                 class="card-img-top rounded"
-                alt="溫泉度假村"
+                alt="環球影城門票"
               />
               <div class="card-body">
-                <h6 class="card-title">
-                  北投溫泉度假村 - 一泊二食溫泉套餐 - 雙人房
-                </h6>
-                <p class="card-text small text-muted">放鬆身心的溫泉之旅</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="text-primary fw-bold">NT$ 6,890</span>
-                </div>
+                <h6 class="card-title">環球影城超值一日遊</h6>
+                <p class="text-muted small">體驗刺激的遊樂設施</p>
+                <span class="fw-bold text-primary">NT$ 5,480</span>
               </div>
             </div>
           </div>
@@ -284,5 +321,24 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // 分頁、左右箭頭、滾動條若有使用則必需設定
+        // 分頁
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // 左右箭頭
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // 滾動條
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

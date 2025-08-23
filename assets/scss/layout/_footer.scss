@@ -3,6 +3,31 @@
   min-height: 286px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+.bg-footer {
+  background-color: #1a1a1a;
+  height: 286px;
+}
+
+.social-icon {
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.8;
+}
+
+/* 確保在小螢幕上的可讀性 */
+@media (max-width: 576px) {
+  .footer-links {
+    flex-direction: column;
+  }
+  .bg-footer {
+    background-color: #1a1a1a;
+    height: 514px;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.25rem;
+  }
 }

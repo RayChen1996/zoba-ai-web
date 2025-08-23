@@ -1,25 +1,8 @@
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
+.cart-tag {
+  width: 16px;
+  height: 16px;
+  line-height: 1.333;
 }
-.cart-badge {
-  position: absolute;
-  top: -8px;
-  right: -8px;
-  background: #dc3545;
-  color: white;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cart-icon {
-  position: relative;
-}
-
-.custom-search-width {
-  width: 470px;
+.navbar-lg-search {
+  width: 400px;
 }
