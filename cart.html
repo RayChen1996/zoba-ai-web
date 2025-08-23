@@ -169,13 +169,15 @@
               <input type="checkbox" class="form-check-input" checked />
               <span>全選</span>
             </label>
-            <button class="btn btn-outline-primary">刪除選中活動</button>
+            <button class="btn btn-outline-primary fw-semibold">
+              刪除選中活動
+            </button>
           </div>
           <div class="card border-0 mb-5 mb-lg-7 p-3">
             <!-- 商品項目 -->
-            <div class="row align-items-start py-3 border-bottom">
+            <div class="align-items-start d-lg-flex py-3 border-bottom">
               <!-- 勾選框 -->
-              <div class="col-1 d-flex justify-content-center">
+              <div class="col-1">
                 <input type="checkbox" class="form-check-input" checked />
               </div>
 
@@ -190,7 +192,9 @@
 
               <!-- 商品資訊 -->
               <div class="col-7 col-md-8">
-                <h6 class="mb-1 fw-semibold">美味天然蜂蜜產品 HAUUKAS 300</h6>
+                <h6 class="mb-1 fw-semibold mt-4 mb-5 mt-lg-0 mb-lg-0">
+                  美味天然蜂蜜產品 HAUUKAS 300
+                </h6>
                 <small class="text-muted d-block"
                   >阿倍野展望台門票 HARUKAS 300｜附章魚燒兌換劵</small
                 >
@@ -214,7 +218,7 @@
 
           <div class="card border-0 mb-5 mb-lg-7 p-3">
             <!-- 商品項目 2 -->
-            <div class="row align-items-start py-3">
+            <div class="align-items-start d-lg-flex py-3 border-bottom">
               <div class="col-1">
                 <input type="checkbox" class="form-check-input" checked />
               </div>
@@ -226,7 +230,9 @@
                 />
               </div>
               <div class="col-4">
-                <h6 class="mb-1 fw-semibold">美式咖啡豆精選套組</h6>
+                <h6 class="mb-1 fw-semibold mt-4 mb-5 mt-lg-0 mb-lg-0">
+                  美式咖啡豆精選套組
+                </h6>
                 <small class="text-muted"
                   >精選優質咖啡豆，深度烘焙，香氣濃郁，適合美式咖啡愛好者</small
                 >
@@ -260,7 +266,7 @@
           </div>
           <div class="card border-0 mb-5 mb-lg-7 p-3">
             <!-- 商品項目 3 -->
-            <div class="row align-items-start py-3">
+            <div class="align-items-start d-lg-flex py-3 border-bottom">
               <div class="col-1">
                 <input type="checkbox" class="form-check-input" checked />
               </div>
@@ -272,7 +278,9 @@
                 />
               </div>
               <div class="col-4">
-                <h6 class="mb-1 fw-semibold">優質茶葉禮盒 HAUUKAS 200</h6>
+                <h6 class="mb-1 fw-semibold mt-4 mb-5 mt-lg-0 mb-lg-0">
+                  優質茶葉禮盒 HAUUKAS 200
+                </h6>
                 <small class="text-muted"
                   >精選台灣高山茶葉，香氣清雅，回甘甘甜</small
                 >
@@ -306,8 +314,8 @@
           </div>
         </div>
 
-        <!-- 結帳摘要 -->
-        <div class="col-lg-4">
+        <!-- 費用明細 -->
+        <div class="col-lg-4 d-none d-lg-block">
           <div class="card shadow-sm">
             <div class="card-body">
               <h5 class="fw-bold">費用明細</h5>
@@ -324,7 +332,9 @@
                 <strong>總計</strong>
                 <span class="text-primary fw-bold fs-5">NT$ 3,500</span>
               </div>
-              <button class="btn btn-primary w-100">前往結帳</button>
+              <button class="btn btn-primary w-100 fw-semibold">
+                前往結賬
+              </button>
             </div>
           </div>
         </div>
@@ -336,15 +346,15 @@
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGVSURBVHgB7VRLTsMwEB2jSsAObtAb4K5a2JAlAhZwAsIJCicg3ICeIOUEdAVILDA7KhaYExBOQFcghJphHLuJ47oJEhKw6Cziz5t5M36eGGBuf22szmG3w4MU4FbNEWFwNZT7Odbm3ZTBmcGOCOu58Qt1CQBhzVoJGyJyXjAx6QuvTVBFwizsfRGffPFTEm2RJJS1aW2dQLE+dNzj7IswIqbjrCCA5PpeiolDw01A5Ac0hOC3GPxlrkwwiu+DJWX9HfzQpk5AKXuIrK+mDDEEcxo6esQYE7kfYkT6BgYLCUv0Nr7YdJVtur3OL0jfPTX/HEPr5kHml7zT5q+opCH9L4dydRZHpUQs1RUqEpucGqGJWnegUVZylCru8NDBY80PCTmeWlGcNrsGE4Sdq/nbEgyEkCOboOEj9FTRLGFYwgIwd7H8wZ5puLNjf7eLUqv/KXME5gdLnf/C9HomHWo/bU4HKZvZRXQfqGNA0iPWyvc3OKeMjwYrPX4+80qUkRSWlALGsGktBdSYN0EVyXde0Ln9L/sCdNyEHbtTteIAAAAASUVORK5CYII=" alt="" />
           其他旅人也買了
         </h3>
-        <!-- 手機用swipper -->
-        <div class="swiper d-lg-none">
+
+        <!-- swipper -->
+        <div class="swiper mySwiper mb-3">
           <div class="swiper-wrapper">
-            <!-- Slide 1 -->
             <div class="swiper-slide">
-              <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
+              <div class="card h-100 border-0 bg-Neutral-15">
                 <span
                   role="button"
-                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer bg-opacity-50 backdrop-blur-5"
                 >
                   favorite_border
                 </span>
@@ -353,110 +363,250 @@
                   class="card-img-top rounded"
                   alt="環球影城門票"
                 />
-                <div class="card-body">
-                  <h6 class="card-title">環球影城超值一日遊</h6>
-                  <p class="text-muted small">體驗刺激的遊樂設施</p>
-                  <span class="fw-bold text-primary">NT$ 5,480</span>
+                <div class="card-body d-flex flex-column border-bottom">
+                  <h6 class="card-title fw-bold fs-5">
+                    環球影城超值一日遊｜哈利波特園區＋快速通關體驗
+                  </h6>
+                  <div class="mt-2">
+                    <span
+                      class="badge text-primary me-1 rounded-1 bg-primary bg-opacity-10"
+                      >即買即用</span
+                    >
+                    <span
+                      class="badge text-primary rounded-1 bg-primary bg-opacity-10"
+                      >5天前可免費取消</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center mt-2 mb-5 text-Neutral-80 small"
+                  >
+                    <span class="me-1">
+                      <svg
+                        width="12"
+                        height="13"
+                        viewBox="0 0 12 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.00187 9.53605L2.73937 11.2176C2.71467 11.2303 2.68693 11.2359 2.65923 11.2338C2.63153 11.2317 2.60496 11.2219 2.58248 11.2056C2.56001 11.1892 2.54251 11.167 2.53194 11.1413C2.52137 11.1156 2.51814 11.0875 2.52262 11.0601L3.11512 7.43755L0.506618 4.85605C0.48649 4.83673 0.472209 4.81214 0.465413 4.78508C0.458616 4.75803 0.459577 4.72961 0.468188 4.70307C0.476798 4.67654 0.492708 4.65296 0.514096 4.63505C0.535483 4.61714 0.561484 4.60562 0.589118 4.6018L4.21687 4.04455L5.86687 0.76705C5.87931 0.742089 5.89846 0.721091 5.92218 0.706413C5.94589 0.691735 5.97323 0.68396 6.00112 0.68396C6.02901 0.68396 6.05634 0.691735 6.08006 0.706413C6.10377 0.721091 6.12293 0.742089 6.13537 0.76705L7.78537 4.04455L11.4131 4.6018C11.4406 4.60588 11.4664 4.61755 11.4876 4.6355C11.5088 4.65344 11.5246 4.67694 11.5331 4.70336C11.5417 4.72979 11.5427 4.75807 11.5361 4.78505C11.5295 4.81202 11.5155 4.83661 11.4956 4.85605L8.88937 7.4383L9.48037 11.0608C9.48468 11.0882 9.48133 11.1162 9.47069 11.1418C9.46005 11.1673 9.44254 11.1895 9.4201 11.2057C9.39765 11.2219 9.37115 11.2316 9.34353 11.2337C9.31591 11.2358 9.28825 11.2302 9.26362 11.2176L6.00187 9.53605Z"
+                          fill="#F6BD2B"
+                        />
+                      </svg>
+                    </span>
+                    <span class="me-2 border-end pe-2">4.8 (1029)</span>
+
+                    <span>1,000+ 個已訂購</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column p-3 mt-5">
+                  <span class="fw-bold text-primary fs-4">NT$ 5,480</span>
+                  <span
+                    class="text-muted text-decoration-line-through fs-6 me-2"
+                    >NT$ 6,200</span
+                  >
                 </div>
               </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide"></div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide"></div>
-            <!-- Slide 4 -->
-            <div class="swiper-slide"></div>
-          </div>
-          <!-- Swiper controls -->
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-scrollbar"></div>
-        </div>
-        <!-- 桌機顯示4個 -->
-        <div class="row g-4 d-none d-lg-block">
-          <div class="col-lg-3">
-            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
-              <span
-                role="button"
-                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
-              >
-                favorite_border
-              </span>
-              <img
-                src="/zoba-ai-web/assets/top-1-DLY_45Sw.png"
-                class="card-img-top rounded"
-                alt="環球影城門票"
-              />
-              <div class="card-body">
-                <h6 class="card-title">環球影城超值一日遊</h6>
-                <p class="text-muted small">體驗刺激的遊樂設施</p>
-                <span class="fw-bold text-primary">NT$ 5,480</span>
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 bg-Neutral-15">
+                <span
+                  role="button"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer bg-opacity-50 backdrop-blur-5"
+                >
+                  favorite_border
+                </span>
+                <img
+                  src="/zoba-ai-web/assets/top-2-DLkjmVc3.png"
+                  class="card-img-top rounded"
+                  alt="奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行"
+                />
+                <div class="card-body d-flex flex-column border-bottom">
+                  <h6 class="card-title fw-bold fs-5">
+                    奈良梅花鹿餵食體驗＋和服散策｜日式風情輕旅行
+                  </h6>
+                  <div class="mt-2">
+                    <span
+                      class="badge text-primary me-1 rounded-1 bg-primary bg-opacity-10"
+                      >中文導覽</span
+                    >
+                    <span
+                      class="badge text-primary rounded-1 bg-primary bg-opacity-10"
+                      >5 天前可免費取消</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center mt-2 mb-5 text-Neutral-80 small"
+                  >
+                    <span class="me-1">
+                      <svg
+                        width="12"
+                        height="13"
+                        viewBox="0 0 12 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.00187 9.53605L2.73937 11.2176C2.71467 11.2303 2.68693 11.2359 2.65923 11.2338C2.63153 11.2317 2.60496 11.2219 2.58248 11.2056C2.56001 11.1892 2.54251 11.167 2.53194 11.1413C2.52137 11.1156 2.51814 11.0875 2.52262 11.0601L3.11512 7.43755L0.506618 4.85605C0.48649 4.83673 0.472209 4.81214 0.465413 4.78508C0.458616 4.75803 0.459577 4.72961 0.468188 4.70307C0.476798 4.67654 0.492708 4.65296 0.514096 4.63505C0.535483 4.61714 0.561484 4.60562 0.589118 4.6018L4.21687 4.04455L5.86687 0.76705C5.87931 0.742089 5.89846 0.721091 5.92218 0.706413C5.94589 0.691735 5.97323 0.68396 6.00112 0.68396C6.02901 0.68396 6.05634 0.691735 6.08006 0.706413C6.10377 0.721091 6.12293 0.742089 6.13537 0.76705L7.78537 4.04455L11.4131 4.6018C11.4406 4.60588 11.4664 4.61755 11.4876 4.6355C11.5088 4.65344 11.5246 4.67694 11.5331 4.70336C11.5417 4.72979 11.5427 4.75807 11.5361 4.78505C11.5295 4.81202 11.5155 4.83661 11.4956 4.85605L8.88937 7.4383L9.48037 11.0608C9.48468 11.0882 9.48133 11.1162 9.47069 11.1418C9.46005 11.1673 9.44254 11.1895 9.4201 11.2057C9.39765 11.2219 9.37115 11.2316 9.34353 11.2337C9.31591 11.2358 9.28825 11.2302 9.26362 11.2176L6.00187 9.53605Z"
+                          fill="#F6BD2B"
+                        />
+                      </svg>
+                    </span>
+                    <span class="me-2 border-end pe-2">4.7 (880)</span>
+
+                    <span>900+ 個已訂購</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column p-3 mt-5">
+                  <span class="fw-bold text-primary fs-4">NT$ 2,250</span>
+                  <span
+                    class="text-muted text-decoration-line-through fs-6 me-2"
+                    >NT$ 2,800</span
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
-              <span
-                role="button"
-                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
-              >
-                favorite_border
-              </span>
-              <img
-                src="/zoba-ai-web/assets/top-2-DLkjmVc3.png"
-                class="card-img-top rounded"
-                alt="環球影城門票"
-              />
-              <div class="card-body">
-                <h6 class="card-title">環球影城超值一日遊</h6>
-                <p class="text-muted small">體驗刺激的遊樂設施</p>
-                <span class="fw-bold text-primary">NT$ 5,480</span>
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 bg-Neutral-15">
+                <span
+                  role="button"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer bg-opacity-50 backdrop-blur-5"
+                >
+                  favorite_border
+                </span>
+                <img
+                  src="/zoba-ai-web/assets/top-3-Ba63bpk4.png"
+                  class="card-img-top rounded"
+                  alt="黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃"
+                />
+                <div class="card-body d-flex flex-column border-bottom">
+                  <h6 class="card-title fw-bold fs-5">
+                    黑門市場美食巡禮｜在地職人帶路吃遍大阪經典小吃
+                  </h6>
+                  <div class="mt-2">
+                    <span
+                      class="badge text-primary me-1 rounded-1 bg-primary bg-opacity-10"
+                      >專業導覽</span
+                    >
+                    <span
+                      class="badge text-primary rounded-1 bg-primary bg-opacity-10"
+                      >5天前可免費取消</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center mt-2 mb-5 text-Neutral-80 small"
+                  >
+                    <span class="me-1">
+                      <svg
+                        width="12"
+                        height="13"
+                        viewBox="0 0 12 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.00187 9.53605L2.73937 11.2176C2.71467 11.2303 2.68693 11.2359 2.65923 11.2338C2.63153 11.2317 2.60496 11.2219 2.58248 11.2056C2.56001 11.1892 2.54251 11.167 2.53194 11.1413C2.52137 11.1156 2.51814 11.0875 2.52262 11.0601L3.11512 7.43755L0.506618 4.85605C0.48649 4.83673 0.472209 4.81214 0.465413 4.78508C0.458616 4.75803 0.459577 4.72961 0.468188 4.70307C0.476798 4.67654 0.492708 4.65296 0.514096 4.63505C0.535483 4.61714 0.561484 4.60562 0.589118 4.6018L4.21687 4.04455L5.86687 0.76705C5.87931 0.742089 5.89846 0.721091 5.92218 0.706413C5.94589 0.691735 5.97323 0.68396 6.00112 0.68396C6.02901 0.68396 6.05634 0.691735 6.08006 0.706413C6.10377 0.721091 6.12293 0.742089 6.13537 0.76705L7.78537 4.04455L11.4131 4.6018C11.4406 4.60588 11.4664 4.61755 11.4876 4.6355C11.5088 4.65344 11.5246 4.67694 11.5331 4.70336C11.5417 4.72979 11.5427 4.75807 11.5361 4.78505C11.5295 4.81202 11.5155 4.83661 11.4956 4.85605L8.88937 7.4383L9.48037 11.0608C9.48468 11.0882 9.48133 11.1162 9.47069 11.1418C9.46005 11.1673 9.44254 11.1895 9.4201 11.2057C9.39765 11.2219 9.37115 11.2316 9.34353 11.2337C9.31591 11.2358 9.28825 11.2302 9.26362 11.2176L6.00187 9.53605Z"
+                          fill="#F6BD2B"
+                        />
+                      </svg>
+                    </span>
+                    <span class="me-2 border-end pe-2">4.6 (540)</span>
+
+                    <span>700+ 個已訂購</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column p-3 mt-5">
+                  <span class="fw-bold text-primary fs-4">NT$ 1,580</span>
+                  <span
+                    class="text-muted text-decoration-line-through fs-6 me-2"
+                    >NT$ 2,500</span
+                  >
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
-              <span
-                role="button"
-                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
-              >
-                favorite_border
-              </span>
-              <img
-                src="/zoba-ai-web/assets/top-3-Ba63bpk4.png"
-                class="card-img-top rounded"
-                alt="環球影城門票"
-              />
-              <div class="card-body">
-                <h6 class="card-title">環球影城超值一日遊</h6>
-                <p class="text-muted small">體驗刺激的遊樂設施</p>
-                <span class="fw-bold text-primary">NT$ 5,480</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
-              <span
-                role="button"
-                class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
-              >
-                favorite_border
-              </span>
-              <img
-                src="/zoba-ai-web/assets/top-4-FDuWEWBq.png"
-                class="card-img-top rounded"
-                alt="環球影城門票"
-              />
-              <div class="card-body">
-                <h6 class="card-title">環球影城超值一日遊</h6>
-                <p class="text-muted small">體驗刺激的遊樂設施</p>
-                <span class="fw-bold text-primary">NT$ 5,480</span>
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 bg-Neutral-15">
+                <span
+                  role="button"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer bg-opacity-50 backdrop-blur-5"
+                >
+                  favorite_border
+                </span>
+                <img
+                  src="/zoba-ai-web/assets/top-4-FDuWEWBq.png"
+                  class="card-img-top rounded"
+                  alt="環球影城門票"
+                />
+                <div class="card-body d-flex flex-column border-bottom">
+                  <h6 class="card-title fw-bold fs-5">
+                    大阪夜景直升機體驗｜空中俯瞰梅田摩天輪＋海遊館
+                  </h6>
+                  <div class="mt-2">
+                    <span
+                      class="badge text-primary me-1 rounded-1 bg-primary bg-opacity-10"
+                      >即買即用</span
+                    >
+                    <span
+                      class="badge text-primary rounded-1 bg-primary bg-opacity-10"
+                      >5天前可免費取消</span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-center mt-2 mb-5 text-Neutral-80 small"
+                  >
+                    <span class="me-1">
+                      <svg
+                        width="12"
+                        height="13"
+                        viewBox="0 0 12 13"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.00187 9.53605L2.73937 11.2176C2.71467 11.2303 2.68693 11.2359 2.65923 11.2338C2.63153 11.2317 2.60496 11.2219 2.58248 11.2056C2.56001 11.1892 2.54251 11.167 2.53194 11.1413C2.52137 11.1156 2.51814 11.0875 2.52262 11.0601L3.11512 7.43755L0.506618 4.85605C0.48649 4.83673 0.472209 4.81214 0.465413 4.78508C0.458616 4.75803 0.459577 4.72961 0.468188 4.70307C0.476798 4.67654 0.492708 4.65296 0.514096 4.63505C0.535483 4.61714 0.561484 4.60562 0.589118 4.6018L4.21687 4.04455L5.86687 0.76705C5.87931 0.742089 5.89846 0.721091 5.92218 0.706413C5.94589 0.691735 5.97323 0.68396 6.00112 0.68396C6.02901 0.68396 6.05634 0.691735 6.08006 0.706413C6.10377 0.721091 6.12293 0.742089 6.13537 0.76705L7.78537 4.04455L11.4131 4.6018C11.4406 4.60588 11.4664 4.61755 11.4876 4.6355C11.5088 4.65344 11.5246 4.67694 11.5331 4.70336C11.5417 4.72979 11.5427 4.75807 11.5361 4.78505C11.5295 4.81202 11.5155 4.83661 11.4956 4.85605L8.88937 7.4383L9.48037 11.0608C9.48468 11.0882 9.48133 11.1162 9.47069 11.1418C9.46005 11.1673 9.44254 11.1895 9.4201 11.2057C9.39765 11.2219 9.37115 11.2316 9.34353 11.2337C9.31591 11.2358 9.28825 11.2302 9.26362 11.2176L6.00187 9.53605Z"
+                          fill="#F6BD2B"
+                        />
+                      </svg>
+                    </span>
+                    <span class="me-2 border-end pe-2">4.7 (319)</span>
+
+                    <span>600+ 個已訂購</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column p-3 mt-5">
+                  <span class="fw-bold text-primary fs-4">NT$ 6,890</span>
+                  <span
+                    class="text-muted text-decoration-line-through fs-6 me-2"
+                    >NT$ 8,890</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="d-flex py-4 px-5 d-lg-none justify-content-between align-items-center mt-5 bg-white"
+    >
+      <div>
+        <h6 class="d-flex align-items-center gap-1 mb-2">
+          <span>展開明細</span>
+          <span class="material-icons-outlined align-bottom">
+            keyboard_arrow_up
+          </span>
+        </h6>
+        <div class="fw-semibold">NT$ 3,600</div>
+      </div>
+      <div class="btn btn-primary fw-semibold">前往結賬</div>
     </div>
     <footer class="bg-footer text-white d-flex flex-column justify-content-center">
   <div class="container py-lg-8 py-lg-4">
@@ -620,24 +770,19 @@
   </div>
 </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-      const swiper = new Swiper(".swiper", {
-        // 分頁、左右箭頭、滾動條若有使用則必需設定
-        // 分頁
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        // 左右箭頭
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        // 滾動條
-        scrollbar: {
-          el: ".swiper-scrollbar",
+      new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+        breakpoints: {
+          480: {
+            slidesPerView: 2.2,
+          },
         },
       });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
