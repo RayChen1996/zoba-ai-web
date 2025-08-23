@@ -202,8 +202,8 @@
                 ></div>
               </div>
             </div>
-            <div class="align-items-center d-flex justify-content-between">
-              <div>
+            <div class="align-items-center d-flex mt-5 justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
                 <a class="link underline-primary" href="#"> 編輯 </a>
                 <a class="link underline-primary" href="#"> 刪除 </a>
               </div>
@@ -249,8 +249,8 @@
               <!-- <div class="col-1 text-end fw-bold">NT$ 1,230</div> -->
             </div>
 
-            <div class="align-items-center d-flex justify-content-between">
-              <div>
+            <div class="align-items-center mt-5 d-flex justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
                 <a class="link underline-primary" href="#"> 編輯 </a>
                 <a class="link underline-primary" href="#"> 刪除 </a>
               </div>
@@ -295,8 +295,8 @@
               <!-- <div class="col-1 text-end fw-bold">NT$ 410</div> -->
             </div>
 
-            <div class="align-items-center d-flex justify-content-between">
-              <div>
+            <div class="align-items-center mt-5 d-flex justify-content-between">
+              <div class="d-flex gap-lg-10 gap-7">
                 <a class="link underline-primary" href="#"> 編輯 </a>
                 <a class="link underline-primary" href="#"> 刪除 </a>
               </div>
@@ -336,10 +336,30 @@
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGVSURBVHgB7VRLTsMwEB2jSsAObtAb4K5a2JAlAhZwAsIJCicg3ICeIOUEdAVILDA7KhaYExBOQFcghJphHLuJ47oJEhKw6Cziz5t5M36eGGBuf22szmG3w4MU4FbNEWFwNZT7Odbm3ZTBmcGOCOu58Qt1CQBhzVoJGyJyXjAx6QuvTVBFwizsfRGffPFTEm2RJJS1aW2dQLE+dNzj7IswIqbjrCCA5PpeiolDw01A5Ac0hOC3GPxlrkwwiu+DJWX9HfzQpk5AKXuIrK+mDDEEcxo6esQYE7kfYkT6BgYLCUv0Nr7YdJVtur3OL0jfPTX/HEPr5kHml7zT5q+opCH9L4dydRZHpUQs1RUqEpucGqGJWnegUVZylCru8NDBY80PCTmeWlGcNrsGE4Sdq/nbEgyEkCOboOEj9FTRLGFYwgIwd7H8wZ5puLNjf7eLUqv/KXME5gdLnf/C9HomHWo/bU4HKZvZRXQfqGNA0iPWyvc3OKeMjwYrPX4+80qUkRSWlALGsGktBdSYN0EVyXde0Ln9L/sCdNyEHbtTteIAAAAASUVORK5CYII=" alt="" />
           其他旅人也買了
         </h3>
-        <div class="swiper">
+        <!-- 手機用swipper -->
+        <div class="swiper d-lg-none">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide"></div>
+            <div class="swiper-slide">
+              <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
+                <span
+                  role="button"
+                  class="material-icons-outlined position-absolute top-0 end-0 m-2 cursor-pointer"
+                >
+                  favorite_border
+                </span>
+                <img
+                  src="/zoba-ai-web/assets/top-1-DLY_45Sw.png"
+                  class="card-img-top rounded"
+                  alt="環球影城門票"
+                />
+                <div class="card-body">
+                  <h6 class="card-title">環球影城超值一日遊</h6>
+                  <p class="text-muted small">體驗刺激的遊樂設施</p>
+                  <span class="fw-bold text-primary">NT$ 5,480</span>
+                </div>
+              </div>
+            </div>
             <!-- Slide 2 -->
             <div class="swiper-slide"></div>
             <!-- Slide 3 -->
@@ -353,7 +373,8 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-scrollbar"></div>
         </div>
-        <div class="row g-4">
+        <!-- 桌機顯示4個 -->
+        <div class="row g-4 d-none d-lg-block">
           <div class="col-lg-3">
             <div class="card h-100 border-0 shadow-sm bg-Neutral-15">
               <span
