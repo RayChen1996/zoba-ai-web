@@ -319,239 +319,334 @@
           </div>
 
           <!-- 上層頁籤 -->
-
           <ul
             class="nav nav-underline rounded-2 mb-4 mb-lg-5 bg-white py-5 justify-content-around"
           >
-            <li class="nav-item">
-              <a class="nav-link active fw-bold" aria-current="page" href="#"
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active fw-bold"
+                id="pills-account-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-account"
+                type="button"
+                role="tab"
+                aria-controls="pills-account"
+                aria-selected="true"
+                aria-current="page"
+                href="#"
                 >我的帳號</a
               >
             </li>
-            <li class="nav-item border-start ps-4">
-              <a class="nav-link fw-bold" href="#">訂單管理</a>
+            <li class="nav-item border-start ps-4" role="presentation">
+              <a
+                class="nav-link fw-bold"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                href="#"
+                >訂單管理</a
+              >
             </li>
 
-            <li class="nav-item border-start ps-4">
-              <a class="nav-link fw-bold" href="#">我的收藏</a>
+            <li class="nav-item border-start ps-4" role="presentation">
+              <a
+                class="nav-link fw-bold"
+                href="#"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >我的收藏</a
+              >
             </li>
           </ul>
 
-          <!-- 卡片 -->
-          <div class="card border-0 rounded-4">
-            <div class="card-body p-4 p-md-5">
-              <div class="tab-content" id="pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="pills-account"
-                  role="tabpanel"
-                >
-                  <h3 class="mb-lg-10 mt-lg-12 mt-9 mb-10 fw-bold">我的帳號</h3>
-
-                  <!-- 次級頁籤 -->
-
-                  <ul
-                    class="nav nav-underline mb-lg-7 mb-7 border-bottom"
-                    id="pills-tab"
-                    role="tablist"
-                  >
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link active"
-                        id="pills-home-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-home"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-home"
-                        aria-selected="true"
-                        aria-current="page"
-                        href="#"
-                        >個人資訊</a
-                      >
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a
-                        class="nav-link"
-                        id="pills-profile-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#pills-profile"
-                        type="button"
-                        role="tab"
-                        aria-controls="pills-profile"
-                        aria-selected="false"
-                        href="#"
-                      >
-                        常用旅客</a
-                      >
-                    </li>
-                  </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-account"
+              role="tabpanel"
+              aria-labelledby="pills-account-tab"
+            >
+              <!-- 卡片 -->
+              <div class="card border-0 rounded-4">
+                <div class="card-body p-4 p-md-5">
                   <div class="tab-content" id="pills-tabContent">
                     <div
                       class="tab-pane fade show active"
-                      id="pills-home"
+                      id="pills-account"
                       role="tabpanel"
-                      aria-labelledby="pills-home-tab"
-                      tabindex="0"
                     >
-                      <!-- Info 列表 -->
-                      <div class="align-items-center">
-                        <div>
-                          <span class="text-Neutral-80">姓名</span>
-                          <p class="mb-0 fw-bold">Jessica Yen</p>
-                        </div>
+                      <h3 class="mb-lg-10 mt-lg-12 mt-9 mb-10 fw-bold">
+                        我的帳號
+                      </h3>
 
-                        <div class="mt-7">
-                          <span class="text-muted">電子信箱</span>
-                          <p class="mb-0 fw-bold">jessica.yen@gmail.com</p>
-                        </div>
-
-                        <div class="mt-7">
-                          <span class="text-muted">密碼</span>
-                          <p class="mb-0 fw-bold">************</p>
-                        </div>
-
-                        <div class="mt-7">
-                          <span class="text-muted">聯絡電話</span>
-                          <p class="mb-0 fw-bold">+886 912-345-678</p>
-                        </div>
-
-                        <div class="mt-7">
-                          <span class="text-muted">地址</span>
-                          <p class="mb-0 fw-bold">
-                            台北市士林區幸福路193號5樓之1
-                          </p>
-                        </div>
-
-                        <div class="mt-7">
-                          <span class="text-muted">生日</span>
-                          <p class="mb-0 fw-bold">1995-09-20</p>
-                        </div>
-                      </div>
-                      <div class="text-end mt-5">
-                        <button class="btn btn-outline-primary px-4 rounded-3">
-                          <span class="material-icons-outlined align-bottom">
-                            edit </span
-                          >編輯資訊
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="pills-profile"
-                      role="tabpanel"
-                      aria-labelledby="pills-profile-tab"
-                      tabindex="0"
-                    >
-                      <div class="mt-5">
-                        <div class="card d-flex p-4 mb-4">
-                          <div
-                            class="d-lg-flex align-items-center justify-content-between gap-3 p-lg-7 p-5"
+                      <!-- 次級頁籤 -->
+                      <ul
+                        class="nav nav-underline mb-lg-7 mb-7 border-bottom"
+                        id="pills-tab"
+                        role="tablist"
+                      >
+                        <li class="nav-item me-8" role="presentation">
+                          <a
+                            class="nav-link active"
+                            id="pills-home-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-home"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-home"
+                            aria-selected="true"
+                            aria-current="page"
+                            href="#"
+                            >個人資訊</a
                           >
-                            <div class="d-flex gap-2 align-items-center">
-                              <img
-                                src="/zoba-ai-web/assets/avatar-1-cp2HwrEX.png"
-                                class="rounded-circle avator"
-                                alt=""
-                              />
-                              <div class="d-flex flex-column gap-2">
-                                <span class="fw-bold fs-4">Jessica Yen</span>
-                                <span
-                                  class="align-bottom d-none d-lg-block text-Primary-100"
-                                >
-                                  <svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M2 8.66667C2 7.95942 2.28095 7.28115 2.78105 6.78105C3.28115 6.28095 3.95942 6 4.66667 6H11.3333C12.0406 6 12.7189 6.28095 13.219 6.78105C13.719 7.28115 14 7.95942 14 8.66667V13.3333C14 13.687 13.8595 14.0261 13.6095 14.2761C13.3594 14.5262 13.0203 14.6667 12.6667 14.6667H3.33333C2.97971 14.6667 2.64057 14.5262 2.39052 14.2761C2.14048 14.0261 2 13.687 2 13.3333V8.66667Z"
-                                      stroke="#4A3830"
-                                      stroke-width="1.33333"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2 8.66663L3.94267 10.2206C4.734 10.854 5.876 10.7906 6.59267 10.074C6.77746 9.88911 6.99686 9.74248 7.23834 9.64244C7.47981 9.5424 7.73862 9.49091 8 9.49091C8.26138 9.49091 8.52019 9.5424 8.76166 9.64244C9.00314 9.74248 9.22254 9.88911 9.40733 10.074C9.75362 10.4202 10.2154 10.6265 10.7043 10.6536C11.1932 10.6806 11.675 10.5265 12.0573 10.2206L14 8.66663"
-                                      stroke="#4A3830"
-                                      stroke-width="1.33333"
-                                      stroke-linecap="round"
-                                    />
-                                    <path
-                                      d="M8.0013 3.99996C7.64768 3.99996 7.30854 3.85948 7.05849 3.60943C6.80844 3.35939 6.66797 3.02025 6.66797 2.66663C6.66797 2.08263 7.1193 1.61596 7.51664 1.18863L8.0013 0.666626L8.48597 1.18863C8.8833 1.61596 9.33464 2.08263 9.33464 2.66663C9.33464 3.02025 9.19416 3.35939 8.94411 3.60943C8.69406 3.85948 8.35492 3.99996 8.0013 3.99996Z"
-                                      stroke="#4A3830"
-                                      stroke-width="1.33333"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </svg>
-                                  Jenny.Linnn@gmail.com
-                                </span>
-                                <span
-                                  class="align-bottom d-none d-lg-block text-Primary-100"
-                                  ><svg
-                                    width="16"
-                                    height="16"
-                                    viewBox="0 0 16 16"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <path
-                                      d="M2.66667 3.33337H13.3333C13.7 3.33337 14 3.63337 14 4.00004V12C14 12.3667 13.7 12.6667 13.3333 12.6667H2.66667C2.3 12.6667 2 12.3667 2 12V4.00004C2 3.63337 2.3 3.33337 2.66667 3.33337Z"
-                                      stroke="#4A3830"
-                                      stroke-width="1.33333"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                    <path
-                                      d="M2 4.33337L8 8.00004L14 4.33337"
-                                      stroke="#4A3830"
-                                      stroke-width="1.33333"
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                    />
-                                  </svg>
-                                  2001.01.30
-                                </span>
-                              </div>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a
+                            class="nav-link"
+                            id="pills-profile-tab"
+                            data-bs-toggle="pill"
+                            data-bs-target="#pills-profile"
+                            type="button"
+                            role="tab"
+                            aria-controls="pills-profile"
+                            aria-selected="false"
+                            href="#"
+                          >
+                            常用旅客</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="pills-home"
+                          role="tabpanel"
+                          aria-labelledby="pills-home-tab"
+                          tabindex="0"
+                        >
+                          <!-- Info 列表 -->
+                          <div class="align-items-center">
+                            <div>
+                              <span class="text-Neutral-80">姓名</span>
+                              <p class="mb-0 fw-bold">Jessica Yen</p>
                             </div>
 
-                            <div class="mt-5 mt-lg-0 d-flex gap-2">
+                            <div class="mt-7">
+                              <span class="text-muted">電子信箱</span>
+                              <p class="mb-0 fw-bold">jessica.yen@gmail.com</p>
+                            </div>
+
+                            <div class="mt-7">
+                              <span class="text-muted">密碼</span>
+                              <p class="mb-0 fw-bold">************</p>
+                            </div>
+
+                            <div class="mt-7">
+                              <span class="text-muted">聯絡電話</span>
+                              <p class="mb-0 fw-bold">+886 912-345-678</p>
+                            </div>
+
+                            <div class="mt-7">
+                              <span class="text-muted">地址</span>
+                              <p class="mb-0 fw-bold">
+                                台北市士林區幸福路193號5樓之1
+                              </p>
+                            </div>
+
+                            <div class="mt-7">
+                              <span class="text-muted">生日</span>
+                              <p class="mb-0 fw-bold">1995-09-20</p>
+                            </div>
+                          </div>
+                          <div class="text-end mt-5">
+                            <button
+                              class="btn btn-outline-primary px-4 rounded-3"
+                            >
+                              <span
+                                class="material-icons-outlined align-bottom"
+                              >
+                                edit </span
+                              >編輯資訊
+                            </button>
+                          </div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="pills-profile-tab"
+                          tabindex="0"
+                        >
+                          <div class="mt-5">
+                            <div class="card d-flex p-4 mb-4">
+                              <div
+                                class="d-lg-flex align-items-center justify-content-between gap-5 p-lg-7 p-5"
+                              >
+                                <div class="d-flex gap-2 align-items-center">
+                                  <img
+                                    src="/zoba-ai-web/assets/avatar-1-cp2HwrEX.png"
+                                    class="rounded-circle avator"
+                                    alt=""
+                                  />
+                                  <div class="d-flex flex-column gap-2">
+                                    <span class="fw-bold fs-4"
+                                      >Jessica Yen</span
+                                    >
+                                    <span
+                                      class="align-bottom d-none d-lg-block text-Primary-100"
+                                    >
+                                      <svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          d="M2 8.66667C2 7.95942 2.28095 7.28115 2.78105 6.78105C3.28115 6.28095 3.95942 6 4.66667 6H11.3333C12.0406 6 12.7189 6.28095 13.219 6.78105C13.719 7.28115 14 7.95942 14 8.66667V13.3333C14 13.687 13.8595 14.0261 13.6095 14.2761C13.3594 14.5262 13.0203 14.6667 12.6667 14.6667H3.33333C2.97971 14.6667 2.64057 14.5262 2.39052 14.2761C2.14048 14.0261 2 13.687 2 13.3333V8.66667Z"
+                                          stroke="#4A3830"
+                                          stroke-width="1.33333"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                        <path
+                                          d="M2 8.66663L3.94267 10.2206C4.734 10.854 5.876 10.7906 6.59267 10.074C6.77746 9.88911 6.99686 9.74248 7.23834 9.64244C7.47981 9.5424 7.73862 9.49091 8 9.49091C8.26138 9.49091 8.52019 9.5424 8.76166 9.64244C9.00314 9.74248 9.22254 9.88911 9.40733 10.074C9.75362 10.4202 10.2154 10.6265 10.7043 10.6536C11.1932 10.6806 11.675 10.5265 12.0573 10.2206L14 8.66663"
+                                          stroke="#4A3830"
+                                          stroke-width="1.33333"
+                                          stroke-linecap="round"
+                                        />
+                                        <path
+                                          d="M8.0013 3.99996C7.64768 3.99996 7.30854 3.85948 7.05849 3.60943C6.80844 3.35939 6.66797 3.02025 6.66797 2.66663C6.66797 2.08263 7.1193 1.61596 7.51664 1.18863L8.0013 0.666626L8.48597 1.18863C8.8833 1.61596 9.33464 2.08263 9.33464 2.66663C9.33464 3.02025 9.19416 3.35939 8.94411 3.60943C8.69406 3.85948 8.35492 3.99996 8.0013 3.99996Z"
+                                          stroke="#4A3830"
+                                          stroke-width="1.33333"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      Jenny.Linnn@gmail.com
+                                    </span>
+                                    <span
+                                      class="align-bottom d-none d-lg-block text-Primary-100"
+                                      ><svg
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 16 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <path
+                                          d="M2.66667 3.33337H13.3333C13.7 3.33337 14 3.63337 14 4.00004V12C14 12.3667 13.7 12.6667 13.3333 12.6667H2.66667C2.3 12.6667 2 12.3667 2 12V4.00004C2 3.63337 2.3 3.33337 2.66667 3.33337Z"
+                                          stroke="#4A3830"
+                                          stroke-width="1.33333"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                        <path
+                                          d="M2 4.33337L8 8.00004L14 4.33337"
+                                          stroke="#4A3830"
+                                          stroke-width="1.33333"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                        />
+                                      </svg>
+                                      2001.01.30
+                                    </span>
+                                  </div>
+                                </div>
+
+                                <div
+                                  class="mt-5 mt-lg-0 d-flex flex-grow-1 gap-2"
+                                >
+                                  <button
+                                    class="btn btn-outline-primary px-4 rounded-3 w-100 w-lg-auto fw-semibold"
+                                  >
+                                    <span
+                                      class="material-icons-outlined align-bottom"
+                                    >
+                                      edit </span
+                                    >編輯資訊
+                                  </button>
+                                  <button
+                                    class="btn btn-outline-primary px-4 rounded-3 w-100 w-lg-auto fw-semibold"
+                                  >
+                                    <span
+                                      class="material-icons-outlined align-bottom"
+                                    >
+                                      close
+                                    </span>
+                                    刪除
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="text-end">
                               <button
-                                class="btn btn-outline-primary px-4 rounded-3 w-100 fw-semibold"
+                                class="btn btn-outline-primary px-4 rounded-3 text-end"
                               >
                                 <span
                                   class="material-icons-outlined align-bottom"
                                 >
-                                  edit </span
-                                >編輯資訊
-                              </button>
-                              <button
-                                class="btn btn-outline-primary px-4 rounded-3 w-100 fw-semibold"
-                              >
-                                <span
-                                  class="material-icons-outlined align-bottom"
-                                >
-                                  delete
+                                  add
                                 </span>
-                                刪除
+                                新增常用旅客
                               </button>
                             </div>
                           </div>
                         </div>
-                        <div class="text-end">
-                          <button
-                            class="btn btn-outline-primary px-4 rounded-3 text-end"
-                          >
-                            <span class="material-icons-outlined align-bottom">
-                              add
-                            </span>
-                            新增常用旅客
-                          </button>
-                        </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <div class="card border-0 rounded-4">
+                <div class="card-body p-4 p-md-5">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-account"
+                      role="tabpanel"
+                    >
+                      <h3 class="mb-lg-10 mt-lg-12 mt-9 mb-10 fw-bold">
+                        訂單管理
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <div class="card border-0 rounded-4">
+                <div class="card-body p-4 p-md-5">
+                  <div class="tab-content" id="pills-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="pills-account"
+                      role="tabpanel"
+                    >
+                      <h3 class="mb-lg-10 mt-lg-12 mt-9 mb-10 fw-bold">
+                        我的收藏
+                      </h3>
                     </div>
                   </div>
                 </div>
