@@ -704,6 +704,9 @@
                 </div>
               </div>
             </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
@@ -889,14 +892,41 @@
 
     <script>
       new Swiper(".mySwiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 16,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
         breakpoints: {
           480: {
-            slidesPerView: 2.2,
+            slidesPerView: 1.2,
+          },
+          992: {
+            slidesPerView: 4,
           },
         },
       });
+
+      // 客製化箭頭樣式
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .swiper-button-next, .swiper-button-prev {
+          background: #fff;
+          border-radius: 12px;
+          width: 56px;
+          height: 56px;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+          font-size: 20px;
+          color: #222;
+        }
+      `;
+      document.head.appendChild(style);
     </script>
   </body>
 </html>
