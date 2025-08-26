@@ -30,9 +30,44 @@
 
 .profile-bg {
   background-color: #f4f4f4;
+  background-image: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week8/user/bg-line.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 30%;
 }
 
 .avator {
   width: 40px;
   height: 40px;
+}
+
+.nav-underline .nav-link {
+  padding: 12px 0px;
+  color: black;
+  position: relative;
+  border: none;
+}
+
+.nav-underline .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  background-color: transparent;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.pills-tab .nav-link.active::after {
+  width: 100%;
+  background-color: #4a3830;
+  width: 32px;
+}
+
+.top-tab .nav-link.active::after {
+  width: 100%;
+  background-color: #cab6af;
 }
